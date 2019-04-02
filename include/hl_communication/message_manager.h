@@ -64,6 +64,12 @@ public:
   uint64_t getStart() const;
 
   /**
+   * Return the time_stamp of the last image received
+   * If no element is found, returns 0
+   */
+  uint64_t getEnd() const;
+
+  /**
    * Build a global game status with the last message of each entity prior to
    * the given time_stamp
    *
